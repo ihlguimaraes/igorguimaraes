@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Portfólio Pessoal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header id="cabecalho">
+        <nav>
+            <div class="logo">Meu Portfólio</div>
+            <ul class="menu">
+                <li><a href="#inicio">Início</a></li>
+                <li><a href="#sobre">Sobre Mim</a></li>
+                <li><a href="#formacao">Formação</a></li>
+                <li><a href="#portfolio">Portfólio</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+            <button id="btn-tema" class="btn-toggle">🌙 Escuro</button>
+        </nav>
+    </header>
+
+    <section id="inicio" class="sessao destaque">
+        <div class="conteudo">
+            <h1>Olá, eu sou <span>Igor Henrique Leão Guimarães</span></h1>
+            <h2>Desenvolvedor(a) Web em Formação</h2>
+            <p>Bem-vindo(a) ao meu currículo e portfólio online.</p>
+            <a href="#portfolio" class="btn">Ver meus trabalhos</a>
+        </div>
+    </section>
+
+    <section id="sobre" class="sessao">
+        <div class="conteudo">
+            <h2>Sobre Mim</h2>
+            <div class="sobre-grid">
+                <div class="bio">
+                    <p>Sou Igor, 45 anos, estudante e bancário, nascido em Itabuna-BA, atualmente residindo em Itagibá-BA e atuando profissionalmente em Ipiaú, também na Bahia.
+        Entusiasmado por tecnologia, me diverto com videogames e filmes, além de demonstrar disposição para aprendizado e desenvolvimento pessoal.
+        No momento focado no curso de Análise e Desenvolvimento de Sistemas, tanto pela curiosidade pelo tema, quanto pela perspectiva de ampliar oportunidades profissionais.
+        Com um olhar pragmático e bem-humorado da vida, encaro os desafios diários com leveza e curiosidade, sempre procurando evolução (pessoal e profissional).</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="formacao" class="sessao">
+        <div class="conteudo">
+            <h2>Formação</h2>
+            <div class="formacao">
+                    <h3>Minha Formação</h3>
+                    <ul>
+                        <li><strong>Análise e Desenvolvimento de Sistemas</strong> - UNINTER (Cursando)</li>
+                    </ul>
+            </div>
+            </div>
+    </section>
+
+    <section id="portfolio" class="sessao cinza">
+        <div class="conteudo">
+            <h2>Meu Portfólio</h2>
+            <div class="grid-projetos">
+                <article class="projeto-card">
+                    <h3>Projeto 1</h3>
+                    <div class="links-projeto">
+                        <a href="https://github.com/ihlguimaraes/uninter_fds_trabalho" target="_blank" class="btn-projeto">Ver Código</a>
+                        <a href="https://ihlguimaraes.github.io/uninter_fds_trabalho/" target="_blank" class="btn-projeto">Ver Site</a>
+                    </div>
+                </article>
+
+                <article class="projeto-card">
+                    <h3>Projeto 2</h3>
+                    <div class="links-projeto">
+                        <a href="https://github.com/ihlguimaraes/fds.uninter" target="_blank" class="btn-projeto">Ver Código</a>
+                        <a href="https://ihlguimaraes.github.io/fds.uninter/" target="_blank" class="btn-projeto">Ver Site</a>
+                    </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contato" class="sessao">
+        <div class="conteudo">
+            <h2>Entre em Contato</h2>
+            <form id="form-contato">
+                <div class="campo">
+                    <label for="nome">Nome Completo:</label>
+                    <input type="text" id="nome" name="nome" placeholder="Digite seu nome">
+                    <span class="erro" id="erro-nome">O nome é obrigatório.</span>
+                </div>
+                
+                <div class="campo">
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email" placeholder="Digite seu e-mail">
+                    <span class="erro" id="erro-email">Insira um e-mail válido.</span>
+                </div>
+
+                <div class="campo">
+                    <label for="mensagem">Mensagem:</label>
+                    <textarea id="mensagem" name="mensagem" rows="5" placeholder="Sua mensagem..."></textarea>
+                    <span class="erro" id="erro-mensagem">A mensagem não pode estar vazia.</span>
+                </div>
+
+                <button type="submit" class="btn">Enviar Mensagem</button>
+                <div id="sucesso-msg">Mensagem enviada com sucesso!</div>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2023/2024 [Seu Nome Aqui]. Desenvolvido para a disciplina de Fundamentos da Programação Web.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
